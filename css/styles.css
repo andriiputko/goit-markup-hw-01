@@ -1,0 +1,233 @@
+:root {
+ --brand-color: #4D5AE5;
+ --text-color-primary: #434455;
+ --text-color-secondary: #2E2F42;
+ --color-cornflower: #E7E9FC;
+ --color-white: #ffffff;
+ --color-ocean: #404BBF;
+ --color-cloud: #F4F4FD;
+
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+header {
+    background-color: var(--color-white);
+}
+
+.logo  {
+    color: var(--brand-color);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+.logo-header {
+    color: var(--text-color-secondary);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav-link {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+ .nav-link:hover, .nav-link:focus, .nav-link.current {
+    color: var(--color-ocean);
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 3px;
+    
+}
+
+.contact-link  {
+    color: var(--text-color-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.contact-link:hover, .contact-link:focus {
+    color: var(--color-ocean);
+}
+
+.main-section {
+    background-color: var(--text-color-secondary);
+}
+
+.main-section-title {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.main-button {
+    font-family: Roboto;
+    background-color: var(--brand-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.main-button:hover, .main-button:focus {
+    background-color: var(--color-ocean);
+    font-family: Roboto;
+    color: var(--color-white);
+}
+.benefit-title {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.benefit-descr {
+    color: var(--text-color-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.work-title {
+    color: var(--text-color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.team-section {
+    background-color: var(--color-cloud);
+
+}
+
+.team-card {
+    background-color: var(--color-white);
+}
+
+.team-title {
+    color: var(--text-color-secondary);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.teammate-name {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.teammate-position {
+    color: var(--text-color-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+footer {
+    background-color: var(--text-color-secondary);
+}
+.logo-footer {
+    font-family: 'Raleway';
+    color: var(--color-cloud);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.footer-contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-cornflower);
+}
+
+.portfolio-btn {
+    background-color: var(--color-cloud);
+    border: 1px solid var(--color-cornflower);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--brand-color);
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,  .portfolio-btn:focus {
+    background: var(--color-ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+
+.project-title {
+    color: var(--text-color-secondary);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.project-descr {
+    color: var(--text-color-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.project-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-cornflower);
+}
