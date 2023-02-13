@@ -16,10 +16,12 @@ body {
 
 header {
     background-color: var(--color-white);
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-cornflower);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
+    margin: 0;
 }
 
 img {
@@ -33,7 +35,6 @@ img {
 .nav-container {
     display: flex;
     align-items: center;
-    padding: 24px 0;
 }
 .nav {
     display: flex;
@@ -43,6 +44,7 @@ img {
 .header-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .logo  {
@@ -53,7 +55,8 @@ img {
     line-height: 1.33;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-    padding-right: 76px;
+    margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo-header {
@@ -63,6 +66,7 @@ img {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
+    padding: 24px 0;
 }
 
 a {
@@ -75,7 +79,6 @@ ul {
     padding: 0;
 }
 .container {
-    width: 100%;
     max-width: 1440px;
     padding: 0 15px;
     margin: 0 auto;
@@ -87,6 +90,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
  .nav-link:hover, .nav-link:focus, .nav-link.current {
@@ -102,6 +106,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .contact-link:hover, .contact-link:focus {
@@ -139,9 +144,8 @@ ul {
     letter-spacing: 0.04em;
     color: var(--color-white);
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    display: block;
+    margin: 0 auto;
     padding: 16px 32px;
     gap: 10px;
 }
@@ -179,7 +183,16 @@ ul {
 
 .benefit-list {
     display: flex;
+    justify-content: center;
     gap: 24px;
+
+}
+
+.benefit-li {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-basis: calc((1176px - 72px)/4);
 }
 .work-list {
     display: flex;
@@ -190,6 +203,7 @@ ul {
 }
 .work-section {
     padding: 120px 0;
+    padding-top: 0;
 }
 
 .work-title {
@@ -209,10 +223,7 @@ ul {
 
 .team-card {
     background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .team-list {
@@ -238,10 +249,14 @@ ul {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
 }
 
+.team-name-container {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .teammate-position {
     color: var(--text-color-primary);
     font-size: 16px;
@@ -252,14 +267,10 @@ ul {
 
 footer {
     background-color: var(--text-color-secondary);
-}
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .logo-footer {
     font-family: 'Raleway', sans-serif;
     color: var(--color-cloud);
@@ -276,6 +287,11 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-cornflower);
+    margin-top: 16px;
+}
+
+.poftfolio-section{
+    padding-top: 96px;
 }
 
 .portfolio-list {
@@ -283,8 +299,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .portfolio-btn {
     font-family: 'Roboto', sans-serif;
@@ -313,6 +328,9 @@ footer {
     color: var(--color-white);
 }
 
+.projecr-container {
+    padding-bottom: 32px;
+}
 .project-list {
     display: flex;
     align-items: center;
@@ -330,6 +348,10 @@ footer {
     margin-bottom: 8px;
 }
 
+.project-card {
+    flex-basis: calc((1440px - 48px) / 4);
+}
+
 .project-descr {
     color: var(--text-color-primary);
     font-size: 16px;
@@ -338,5 +360,6 @@ footer {
 }
 .project-img {
     margin-bottom: 32px;
+    margin-right: 0;
 }
 
