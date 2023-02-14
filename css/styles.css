@@ -39,6 +39,7 @@ img {
 .nav {
     display: flex;
     flex-grow: 1;
+    align-items: center;
 }
 
 .header-list {
@@ -56,7 +57,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin-right: 76px;
-    padding: 24px 0;
+    
 }
 
 .logo-header {
@@ -66,7 +67,6 @@ img {
     font-size: 18px;
     line-height: 1.33;
     text-transform: uppercase;
-    padding: 24px 0;
 }
 
 a {
@@ -79,7 +79,7 @@ ul {
     padding: 0;
 }
 .container {
-    max-width: 1440px;
+    max-width: 1158x;
     padding: 0 15px;
     margin: 0 auto;
 
@@ -156,10 +156,7 @@ ul {
     color: var(--color-white);
 }
 
-.benefit-container {
-    display: flex;
-    justify-content: space-between;
-}
+
 .benefit-section {
     padding: 120px 0;
 }
@@ -189,10 +186,7 @@ ul {
 }
 
 .benefit-li {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    flex-basis: calc((1176px - 72px)/4);
+    flex-basis: calc((1158px - 72px) / 4);
 }
 .work-list {
     display: flex;
@@ -291,6 +285,7 @@ footer {
 }
 
 .poftfolio-section{
+    
     padding-top: 96px;
 }
 
@@ -330,14 +325,16 @@ footer {
 
 .projecr-container {
     padding-bottom: 32px;
+    padding-top: 32px;
+    padding-left: 16px;
+    border: 1px solid var(--color-cornflower);
 }
 .project-list {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
-    padding-bottom: 120px;
+    padding: 0 156px 120px 156px;
 }
 .project-title {
     color: var(--text-color-secondary);
@@ -349,7 +346,7 @@ footer {
 }
 
 .project-card {
-    flex-basis: calc((1440px - 48px) / 4);
+    flex-basis: calc( (1158px - 48px) / 3);
 }
 
 .project-descr {
@@ -358,8 +355,5 @@ footer {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.project-img {
-    margin-bottom: 32px;
-    margin-right: 0;
-}
+
 
