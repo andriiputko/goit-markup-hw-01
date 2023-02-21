@@ -433,6 +433,7 @@ footer {
 }
 
 .customers-rect {
+    color: #8E8F99;
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
@@ -444,20 +445,19 @@ footer {
 
 .customers-rect:hover, .customers-rect:focus {
     border: 1px solid var(--color-ocean);
-
+    color: var(--color-ocean);
 } 
 
 
 .customers-svg {
-    fill: #8E8F99;
+    fill:currentColor;
     width: 104px;
    height: 56px;
 
 }
 
-.customers-svg:hover, .customers-svg:focus {
-    fill: var(--color-ocean);
-}
+
+
 
 .customers-title {
     color: var(--text-color-secondary);
