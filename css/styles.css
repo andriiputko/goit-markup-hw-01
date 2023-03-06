@@ -549,9 +549,15 @@ footer {
 
 .footer-container {
     display: flex;
-    gap: 120px;
 }
 
+.footer-title{
+    margin-right: 120px;
+}
+
+.footer-links{
+    margin-right: 80px;
+}
 .footer-social {
     width: 40px;
     height: 40px;
@@ -669,6 +675,7 @@ footer {
 }
 
 .label {
+    display: block;
     color: var(--color-light-slate);
     font-weight: 400;
     font-size: 12px;
@@ -683,6 +690,9 @@ footer {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 38px;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
 
@@ -690,6 +700,12 @@ footer {
     
     outline: 1px solid var(--brand-color);
     border-radius: 4px;
+}
+
+.form-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .form-input:focus + .form-icon{
@@ -723,6 +739,9 @@ footer {
     border-radius: 4px;
     margin-bottom: 16px;
     resize: none;
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .textarea::placeholder{
@@ -770,11 +789,13 @@ footer {
 
 .form-icon {
     position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 14px;
-    left: 19px;
+    width: 18px;
+    height: 24px;
+    top: 8px;
+    left: 16px;
 }
+
+
 
 .footer-form-title {
     color: var(--color-white);
@@ -828,19 +849,26 @@ footer {
 }
 
 .checkbox-icon {
-    display: inline-block;
+    display: block;
     width: 16px;
     height: 16px;
     border: 1.25px solid var(--text-color-primary);
     border-radius: 2px;
     margin-right: 8px;
+    transition-property: background-image;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
-.privat-input:checked ~ .checkbox-icon {
+
+.privat-input:checked + .checkbox-icon {
     background-image: url('../images/check.svg');
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
+    transition-property: background-image;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 
 }
 
